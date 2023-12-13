@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.menu-item {
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+  position: static;
+  text-align: center;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.navigation {
+  flex: 1;
+}
+
+.content {
+  flex: 3;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.big-text {
+  font-size: 40px;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+h2 {
+  font-family: cursive;
+}

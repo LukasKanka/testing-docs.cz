@@ -23,6 +23,10 @@ body {
   flex: 3;
 }
 
+/* .articles {
+  flex: 2;
+} */
+
 footer {
   position: fixed;
   bottom: 0;

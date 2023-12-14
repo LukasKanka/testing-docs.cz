@@ -45,89 +45,48 @@
         <div class="content">
             <p class="big-text">Playwright první test</p>
             <p>Základní a jednoduchý test na webu Google</p>
-            <table class="code">
-                <tr>
-                    <th>import { test, expect } from '@playwright/test';</th>
-                </tr>
-                <tr>
-                    <th>import { chromium } from '@playwright/test';</th>
-                </tr>
-                <tr>
-                    <th>( async () => {</th>
-                </tr>
-                <tr>
-                    <th>const browser = await chromium.launch();</th>
-                </tr>
-                <tr>
-                    <th>const context = await browser.newContext();</th>
-                </tr>
-                <tr>
-                    <th>const page = await context.newPage();</th>
-                </tr>
-                <tr>
-                    <th>await page.goto('<https: //google.com>');</th>
-                </tr>
-                <tr>
-                    <th>// Odsouhlasí cookies</th>
-                </tr>
-                <tr>
-                    <th>await page.click('#L2AGLb');</th>
-                </tr>
-                <tr>
-                    <th>// Klikněte na pole pro vyhledávání.</th>
-                </tr>
-                <tr>
-                    <th>const searchInput = await page.$('[name="q"]');</th>
-                </tr>
-                <tr>
-                    <th>await searchInput?.type('test');</th>
-                </tr>
-                <tr>
-                    <th>// Potvrdíme vyhledávání stisknutím klávesy Enter</th>
-                </tr>
-                <tr>
-                    <th> await searchInput?.press('Enter');</th>
-                </tr>
-                <tr>
-                    <th>await page.waitForNavigation();</th>
-                </tr>
-                <tr>
-                    <th>console.log('Search results page title:', await
-                        page.title());</th>
-                </tr>
-                <tr>
-                    <th>// Vypíše název stránky do konzole</th>
-                </tr>
-                <tr>
-                    <th> const title = await page.title();</th>
-                </tr>
-                <tr>
-                    <th>console.log(title);</th>
-                </tr>
-                <tr>
-                    <th>// Zavře prohlížeč kde probíhal test</th>
-                </tr>
-                <tr>
-                    <th>await browser.close();</th>
-                </tr>
-                <tr>
-                    <th> });</th>
-                </tr>
-            </table>
+            <div class="code-box">
+                <p>import { test, expect } from '@playwright/test';</p>
+                <p>import { chromium } from '@playwright/test';</p>
+                <p>( async () => {</p>
+                <p>const browser = await chromium.launch();</p>
+                <p>const context = await browser.newContext();</p>
+                <p>const page = await context.newPage();</p>
+                <p>await page.goto('<https: //google.com>');</p>
+                <p>// Odsouhlasí cookies</p>
+                <p>await page.click('#L2AGLb');</p>
+                <p>// Klikněte na pole pro vyhledávání.</p>
+                <p>const searchInput = await page.$('[name="q"]');</p>
+                <p>await searchInput?.type('test');</p>
+                <p>// Potvrdíme vyhledávání stisknutím klávesy Enter</p>
+                <p>await searchInput?.press('Enter');</p>
+                <p>await page.waitForNavigation();</p>
+                <p>console.log('Search results page title:', await
+                    page.title());</p>
+                <p>// Vypíše název stránky do konzole</p>
+                <p>const title = await page.title();</p>
+                <p>console.log(title);</p>
+                <p>// Zavře prohlížeč kde probíhal test</p>
+                <p>await browser.close();</p>
+                <p>});</p>
+            </div>
         </div>
         <div class="articles">
             <table>
                 <caption>Nejdůležitější články:</caption>
                 <tr>
                     <th>
-                        <li><a class="button" href="articles/co-je-automatizovane-testovani.html">Co je automatizované
+                        <li><a class="button" href="articles/co-je-automatizovane-testovani.html">Co je
+                                automatizované
                                 testování</a>
                         </li>
                     </th>
                 </tr>
             </table>
         </div>
+
     </div>
+
     <footer>Copyright &copy; Lukáš Kaňka 2023</footer>
 
 </body>

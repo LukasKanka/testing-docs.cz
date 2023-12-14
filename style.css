@@ -47,13 +47,15 @@ h2 {
   color: white;
 }
 
-.code {
-  font-family: monospace;
-  list-style-type: none;
-}
-
 td,
 th {
   border: 1px solid white;
   padding: 10px;
+}
+
+.code-box {
+  border: 1px solid white;
+  padding: 10px;
+  background-color: gray;
+  font-family: monospace;
 }

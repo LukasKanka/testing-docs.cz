@@ -1,5 +1,9 @@
+:root {
+  --special_black: rgb(11, 2, 2);
+}
+
 body {
-  background-color: black;
+  background-color: var(--special_black);
   color: white;
 }
 
@@ -58,4 +62,6 @@ th {
   padding: 10px;
   background-color: gray;
   font-family: monospace;
+  color: black;
+  font-weight: bold;
 }

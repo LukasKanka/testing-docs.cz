@@ -21,15 +21,16 @@ body {
 
 .navigation {
   flex: 1;
+  margin: 0px 0px 0px 50px;
 }
 
 .content {
   flex: 3;
 }
 
-/* .articles {
-  flex: 2;
-} */
+.articles {
+  margin: 0px 50px 0px 0px;
+}
 
 footer {
   position: fixed;
@@ -42,10 +43,12 @@ footer {
 
 h1 {
   font-family: cursive;
+  margin: 0px 0px 0px 30px;
 }
 
 h2 {
   font-family: cursive;
+  margin: 0px 0px 0px 30px;
 }
 .button {
   color: white;

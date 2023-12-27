@@ -67,4 +67,9 @@ th {
   font-family: monospace;
   color: black;
   font-weight: bold;
+  border-radius: 8px;
+}
+
+.not-dot {
+  list-style-type: none;
 }

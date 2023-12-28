@@ -76,3 +76,7 @@ th {
 .not-dot {
   list-style-type: none;
 }
+
+.link {
+  color: var(--special_white);
+}

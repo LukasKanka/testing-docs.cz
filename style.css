@@ -1,10 +1,13 @@
 :root {
   --special_black: rgb(11, 2, 2);
+  --special_white: white;
+  --special_grey: grey;
+  --special_black_original: black;
 }
 
 body {
   background-color: var(--special_black);
-  color: white;
+  color: var(--special_white);
 }
 
 .menu-item {
@@ -51,21 +54,21 @@ h2 {
   margin: 0px 0px 0px 30px;
 }
 .button {
-  color: white;
+  color: var(--special_white);
 }
 
 td,
 th {
-  border: 1px solid white;
+  border: 1px solid var(--special_white);
   padding: 10px;
 }
 
 .code-box {
-  border: 1px solid white;
+  border: 1px solid var(--special_white);
   padding: 10px;
-  background-color: gray;
+  background-color: var(--special_grey);
   font-family: monospace;
-  color: black;
+  color: var(--special_black_original);
   font-weight: bold;
   border-radius: 8px;
 }

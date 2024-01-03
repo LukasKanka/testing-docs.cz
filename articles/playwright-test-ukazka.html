@@ -3,13 +3,13 @@
 
 <head>
     <meta name="description" content="Dokumentace pro všechny testery" />
-    <meta name="keywords" content="Playwright, Automatizované testování" />
+    <meta name="keywords" content="Playwright, Test, Ukázka"/>
     <meta name="author" content="Lukáš Kaňka" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="images/a picture of a text editor on a pc in the style of comics.jpg" />
-    <title>Testing Docs - Playwright komplet souhrn</title>
+    <title>Testing Docs - Playwright ukázka testu</title>
 </head>
 
 <body>
@@ -43,30 +43,24 @@
         </div>
 
         <div class="content">
-            <p class="big-text">Playwright komplet souhrn</p>
-            <p>V JavaScript (TypeScript):
-                Nainstalovat node.js Po vytvoření složek/ ropositáře přes terminal nainstalovat
-                Playwright:</p>
-            <div class="code-box">
-                <p>npm init playwright@latest</p>
-            </div>
-            <p>Test spustíme:</p>
-            <div class="code-box">
-                <p>npx playwright test</p>
-            </div>
+            <p class="big-text">Playwright ukázka testu</p>
+            <p>Do soboru na importujeme browser
+</p>
+<div class="code-box">
+	<p>import { chromium } from „@playwright/test“;</p>
 
-            <p>Druhý způsob instalace:</p>
-            <p>Dále je možné použít způsob testování: Node.js (instalace viz. jak začít.md)</p>
-            <p>Veškeré informace oficial web:</p>
-            <p>Všechni informace na oficiálním webu</p>
-            <p>Zobrazení prohlížeče:</p>
-            <div class="code-box">
-                <p>do playwright.config.js(ts) přidat – > headless: false,</p>
-            </div>
-            <p>Do složky use: ta už je vytvořená.</p>
-            <p>Otevřít stránku testu: (Navigace)</p>
+</div>
+<p>Zapíšeme Konstruktor který se vždy spustí na začátku testu</p>
+<div class="code-box">
+	<p>(async () => {</p>
+</div>
+   <p> V něm zpustíme browser a přiřadíme ho k příslušné proměnné pomocí
+ launch</p>
+   <p> Před každe volání proměnné použijeme await</p>
+<div class="code-box">
+	   <p> pomocí headless: false – zobrazíme v testu prohlížeč</p>
+	</div>
         </div>
-
         <div class="articles">
             <table>
                 <caption>Nejdůležitější články:</caption>

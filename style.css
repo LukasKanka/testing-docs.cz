@@ -81,3 +81,11 @@ th {
 .link {
   color: var(--special_white);
 }
+
+.strong-text {
+  font-weight: bold;
+}
+
+.link-black {
+  color: var(--special_black_original);
+}

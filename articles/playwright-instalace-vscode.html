@@ -2,103 +2,103 @@
 <html lang="cz">
 
 <head>
-    <meta name="description" content="Dokumentace pro všechny testery" />
-    <meta name="keywords" content="Playwricht, VSCode, automatizované testování, TypeScript, JavaScript" />
-    <meta name="author" content="Lukáš Kaňka" />
+    <meta content="Dokumentace pro všechny testery" name="description"/>
+    <meta content="Playwricht, VSCode, automatizované testování, TypeScript, JavaScript" name="keywords"/>
+    <meta content="Lukáš Kaňka" name="author"/>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="shortcut icon" href="images/a picture of a text editor on a pc in the style of comics.jpg" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="/style.css" rel="stylesheet">
+    <link href="images/a picture of a text editor on a pc in the style of comics.jpg" rel="shortcut icon"/>
     <title>Testing Docs - Rychlí způsob instalace Playwright v
         VSCode</title>
 </head>
 
 <body>
-    <h1>Testing Docs CZ</h1>
-    <h2>Dokumentace pro všechny testery</h2>
-    <hr>
-    <div class="menu">
-        <center>
-            <ul>
-                <li class="menu-item"><a class="button" href="/index.html">Domů</a></li>
-                <li class="menu-item"><a class="button" href="/podpora.html">Podpora</a></li>
-                <li class="menu-item"><a class="button" href="/mapa-webu.html">Mapa webu</a></li>
-                <li class="menu-item"><a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
-                </li>
-            </ul>
-        </center>
-    </div>
-    <hr>
+<h1>Testing Docs CZ</h1>
+<h2>Dokumentace pro všechny testery</h2>
+<hr>
+<div class="menu">
+    <center>
+        <ul>
+            <li class="menu-item"><a class="button" href="/index.html">Domů</a></li>
+            <li class="menu-item"><a class="button" href="/podpora.html">Podpora</a></li>
+            <li class="menu-item"><a class="button" href="/mapa-webu.html">Mapa webu</a></li>
+            <li class="menu-item"><a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
+            </li>
+        </ul>
+    </center>
+</div>
+<hr>
 
-    <div class="flexbox">
-        <div class="navigation">
-            <ul>
-                <li><a class="button" href="/automatizovana-testovani.html">Automatizované testování</a></li>
-                <li><a class="button" href="/nastroje.html">Nástroje</a></li>
-                <li><a class="button" href="/penetracni-testovani.html">Penetrační testování</a></li>
-                <li><a class="button" href="/testing-obecne.html">Testing obečně</a></li>
-                <li><a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a></li>
-                <li><a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a></li>
-                <li><a class="button" href="/zatezove-testovani.html">Zátěžové testování</a></li>
-            </ul>
+<div class="flexbox">
+    <div class="navigation">
+        <ul>
+            <li><a class="button" href="/automatizovane-testovani.html">Automatizované testování</a></li>
+            <li><a class="button" href="/nastroje.html">Nástroje</a></li>
+            <li><a class="button" href="/penetracni-testovani.html">Penetrační testování</a></li>
+            <li><a class="button" href="/testing-obecne.html">Testing obečně</a></li>
+            <li><a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a></li>
+            <li><a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a></li>
+            <li><a class="button" href="/zatezove-testovani.html">Zátěžové testování</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <p class="big-text">Rychlí způsob instalace Playwright v
+            VSCode</p>
+        <p>Nejrychlejší způsob instalace Playwright v VSCOde * Jdi do složky projektu
+            pomocí CMD / terminálu a tam zadej:</p>
+
+        <div class="code-box">
+            <p>npm init playwright@latest</p>
         </div>
 
-        <div class="content">
-            <p class="big-text">Rychlí způsob instalace Playwright v
-                VSCode</p>
-            <p>Nejrychlejší způsob instalace Playwright v VSCOde * Jdi do složky projektu
-                pomocí CMD / terminálu a tam zadej:</p>
+        <p>Projdi instalací Playwright</p>
 
-            <div class="code-box">
-                <p>npm init playwright@latest</p>
-            </div>
+        <div class="code-box">
+            <p>Run the install command and select the following to get
+                started:</p>
+            <p>Choose between TypeScript or JavaScript (default is
+                TypeScript)
+                Name of your Tests folder (default is tests or e2e if you
+                already have a tests folder in your project)
+                Add a GitHub Actions workflow to easily run tests on CI
+                Install Playwright browsers (default is true)</p>
+        </div>
 
-            <p>Projdi instalací Playwright</p>
+        <p>Test tímto způsobem instalace spustíme pomocí:</p>
 
-            <div class="code-box">
-                <p>Run the install command and select the following to get
-                    started:</p>
-                <p>Choose between TypeScript or JavaScript (default is
-                    TypeScript)
-                    Name of your Tests folder (default is tests or e2e if you
-                    already have a tests folder in your project)
-                    Add a GitHub Actions workflow to easily run tests on CI
-                    Install Playwright browsers (default is true)</p>
-            </div>
+        <div class="code-box">
+            <p>npx playwright test</p>
+            <p>npm init playwright@latest</p>
+        </div>
 
-            <p>Test tímto způsobem instalace spustíme pomocí:</p>
+        <p>
+            Test tímto způsobem instalace spustíme pomocí:</p>
 
-            <div class="code-box">
-                <p>npx playwright test</p>
-                <p>npm init playwright@latest</p>
-            </div>
-
+        <div class="code-box">
             <p>
-                Test tímto způsobem instalace spustíme pomocí:</p>
-
-            <div class="code-box">
-                <p>
-                    npx playwright test</p>
-            </div>
-
+                npx playwright test</p>
         </div>
 
-        <div class="articles">
-            <table>
-                <caption>Nejdůležitější články:</caption>
-                <tr>
-                    <th>
-                        <li><a class="button" href="co-je-automatizovane-testovani.html">Co je automatizované
-                                testování</a>
-                        </li>
-                        <li><a class="button" href="otazky-a-odpovedi-playwright.html">Otázky a odpovědí k
-                                Playwright</a></li>
-                    </th>
-                </tr>
-            </table>
-        </div>
     </div>
-    <footer>Copyright &copy; Lukáš Kaňka 2023</footer>
+
+    <div class="articles">
+        <table>
+            <caption>Nejdůležitější články:</caption>
+            <tr>
+                <th>
+                    <li><a class="button" href="co-je-automatizovane-testovani.html">Co je automatizované
+                        testování</a>
+                    </li>
+                    <li><a class="button" href="otazky-a-odpovedi-playwright.html">Otázky a odpovědí k
+                        Playwright</a></li>
+                </th>
+            </tr>
+        </table>
+    </div>
+</div>
+<footer>Copyright &copy; Lukáš Kaňka 2023</footer>
 
 </body>
 

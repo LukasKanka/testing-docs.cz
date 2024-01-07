@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta content="Dokumentace pro všechny testery" name="description" />
+    <meta content="MSTest, Nunit, C#" name="keywords" />
+    <meta content="Lukáš Kaňka" name="author" />
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="/style.css" rel="stylesheet">
+    <link href="images/a picture of a text editor on a pc in the style of comics.jpg" rel="shortcut icon" />
+    <title>Testing Docs - MStest založení projektu</title>
+</head>
+
+<body>
+    <h1>Testing Docs CZ</h1>
+    <h2>Dokumentace pro všechny testery</h2>
+    <hr>
+    <div class="menu">
+        <center>
+            <ul>
+                <li class="menu-item"><a class="button" href="/index.html">Domů</a></li>
+                <li class="menu-item"><a class="button" href="/podpora.html">Podpora</a></li>
+                <li class="menu-item"><a class="button" href="/mapa-webu.html">Mapa webu</a></li>
+                <li class="menu-item"><a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
+                </li>
+            </ul>
+        </center>
+    </div>
+    <hr>
+
+    <div class="flexbox">
+        <div class="navigation">
+            <ul>
+                <li><a class="button" href="/automatizovane-testovani.html">Automatizované testování</a></li>
+                <li><a class="button" href="/nastroje.html">Nástroje</a></li>
+                <li><a class="button" href="/penetracni-testovani.html">Penetrační testování</a></li>
+                <li><a class="button" href="/testing-obecne.html">Testing obečně</a></li>
+                <li><a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a></li>
+                <li><a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a></li>
+                <li><a class="button" href="/zatezove-testovani.html">Zátěžové testování</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <p class="big-text">MStest založení projektu</p>
+            <p class="strong-text">Nainstalovat do PC:</p>
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>.NET 7.0 nebo 6.0 s dlouhou podporou</li>
+                    <li>Visual Studio Code</li>
+                    <li>nebo</li>
+                    <li>Visual Studio 2022 – pouze WIN a MacOS</li>
+                </ul>
+            </div>
+            <p class="strong-text">Potřebná rozšíření ve VS Code:</p>
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>.NET Extension Pack</li>
+                    <li>C#</li>
+                    <li>Nuget Package Manager</li>
+                </ul>
+            </div>
+
+            <p class="strong-text">Postup v VSCode:</p>
+            <p>Založení nového projektu ve Visual Studio Code:</p>
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>dotnet new mstest -n MyTestProject</li>
+                    <li>dotnet add package Microsoft.NET.Test.Sdk</li>
+                    <li>dotnet add package MSTest.TestFramework</li>
+                </ul>
+            </div>
+
+            <p class="strong-text">Stažení Selenia (stahne potřebý základ):</p>
+            <p>V terminálu musíme do složky projektu co vytvořila dotnet new
+                mstest</p>
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>dotnet add package Selenium.WebDriver
+                    </li>
+                </ul>
+            </div>
+
+            <p class="strong-text">Test se spustí:</p>
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>dotnet test</li>
+                    <li>nebo za pomocí</li>
+                    <li>dotnet watch který sám automaticky sleduje změny v kódu a je schopný
+                        spustit testy</li>
+                </ul>
+            </div>
+            <p>Tento návod funguje jak pod Linux (odzkoušené v distribucích EndeavorOS,Ubuntu 22.04), MacOS, Windows
+                11.</p>
+
+            <p class="strong-text">Příklad testu:</p>
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>using Microsoft.VisualStudio.TestTools.UnitTesting;</li>
+                    <li>using OpenQA.Selenium;</li>
+                    <li>using OpenQA.Selenium.Chrome;</li>
+                    <li>namespace MyTestProject</li>
+                    <li>{</li>
+                    <li>[TestClass]</li>
+                    <li>public class UnitTest1</li>
+                    <li>{</li>
+                    <li>[TestMethod]</li>
+                    <li>public void TestMethod1()</li>
+                    <li>{</li>
+                    <li>string expectedTitle = "O mně - Lukáš bloguje";</li>
+                    <li>string actualTitle = "";</li>
+                    <li>IWebDriver driver = new ChromeDriver();</li>
+                    <li>driver.Navigate().GoToUrl("https://lukaskanka.cz/");</li>
+                    <li>IWebElement tlačítko = driver.FindElement(By.Id("xPath tlačítka"));</li>
+                    <li>tlačítko.Click();</li>
+                    <li>expectedTitle = "O mně - Lukáš bloguje";</li>
+                    <li>actualTitle = driver.Title;</li>
+                    <li>Assert.AreEqual(expectedTitle, actualTitle, "Title does not match");</li>
+                    <li>}</li>
+                    <li>}</li>
+                    <li>}</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="articles">
+            <table>
+                <caption>Nejdůležitější články:</caption>
+                <tr>
+                    <th>
+                        <li><a class="button" href="co-je-automatizovane-testovani.html">Co je automatizované
+                                testování</a>
+                        </li>
+                        <li><a class="button" href="otazky-a-odpovedi-playwright.html">Otázky a odpovědí k
+                                Playwright</a></li>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>Copyright &copy; Lukáš Kaňka 2023</footer>
+
+</body>
+
+</html>

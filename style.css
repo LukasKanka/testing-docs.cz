@@ -1,91 +1,93 @@
 :root {
-  --special_black: rgb(11, 2, 2);
-  --special_white: white;
-  --special_grey: grey;
-  --special_black_original: black;
+    --special_black: rgb(11, 2, 2);
+    --special_white: white;
+    --special_grey: grey;
+    --special_black_original: black;
 }
 
 body {
-  background-color: var(--special_black);
-  color: var(--special_white);
+    background-color: var(--special_black);
+    color: var(--special_white);
 }
 
 .menu-item {
-  display: inline-block;
-  width: 200px;
-  height: 20px;
-  position: static;
-  text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    position: static;
+    text-align: center;
 }
 
 .flexbox {
-  display: flex;
+    display: flex;
 }
 
 .navigation {
-  flex: 1;
-  margin: 0px 0px 0px 50px;
+    flex: 1;
+    margin: 0px 0px 0px 50px;
 }
 
 .content {
-  flex: 3;
-  margin-bottom: 20px;
+    flex: 3;
+    margin-bottom: 20px;
 }
 
 .articles {
-  margin: 0px 50px 0px 0px;
+    margin: 0px 50px 0px 0px;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+    position: fixed;
+    bottom: 0;
 }
 
 .big-text {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 h1 {
-  font-family: cursive;
-  margin: 0px 0px 0px 30px;
+    font-family: cursive;
+    margin: 0px 0px 0px 30px;
 }
 
 h2 {
-  font-family: cursive;
-  margin: 0px 0px 0px 30px;
+    font-family: cursive;
+    margin: 0px 0px 0px 30px;
 }
+
+/*.link-white*/
 .button {
-  color: var(--special_white);
+    color: var(--special_white);
 }
 
 td,
 th {
-  border: 1px solid var(--special_white);
-  padding: 10px;
+    border: 1px solid var(--special_white);
+    padding: 10px;
 }
 
 .code-box {
-  border: 1px solid var(--special_white);
-  padding: 10px;
-  background-color: var(--special_grey);
-  font-family: monospace;
-  color: var(--special_black_original);
-  font-weight: bold;
-  border-radius: 8px;
+    border: 1px solid var(--special_white);
+    padding: 10px;
+    background-color: var(--special_grey);
+    font-family: monospace;
+    color: var(--special_black_original);
+    font-weight: bold;
+    border-radius: 8px;
 }
 
 .not-dot {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .link {
-  color: var(--special_white);
+    color: var(--special_white);
 }
 
 .strong-text {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .link-black {
-  color: var(--special_black_original);
+    color: var(--special_black_original);
 }

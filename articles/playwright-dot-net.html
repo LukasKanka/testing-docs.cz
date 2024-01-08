@@ -2,163 +2,181 @@
 <html lang="cz">
 
 <head>
-    <meta content="Dokumentace pro všechny testery" name="description"/>
-    <meta content="Playwright MSTest + .Net" name="keywords"/>
-    <meta content="Lukáš Kaňka" name="author"/>
+    <meta content="Dokumentace pro všechny testery" name="description" />
+    <meta content="Playwright MSTest + .Net" name="keywords" />
+    <meta content="Lukáš Kaňka" name="author" />
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="/style.css" rel="stylesheet">
-    <link href="images/a picture of a text editor on a pc in the style of comics.jpg" rel="shortcut icon"/>
+    <link href="images/a picture of a text editor on a pc in the style of comics.jpg" rel="shortcut icon" />
     <title>Testing Docs - Playwright MSTest + .Net</title>
 </head>
 
 <body>
-<h1>Testing Docs CZ</h1>
-<h2>Dokumentace pro všechny testery</h2>
-<hr>
-<div class="menu">
-    <center>
-        <ul>
-            <li class="menu-item"><a class="button" href="/index.html">Domů</a></li>
-            <li class="menu-item"><a class="button" href="/podpora.html">Podpora</a></li>
-            <li class="menu-item"><a class="button" href="/mapa-webu.html">Mapa webu</a></li>
-            <li class="menu-item"><a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
-            </li>
-        </ul>
-    </center>
-</div>
-<hr>
-
-<div class="flexbox">
-    <div class="navigation">
-        <ul>
-            <li><a class="button" href="/automatizovane-testovani.html">Automatizované testování</a></li>
-            <li><a class="button" href="/nastroje.html">Nástroje</a></li>
-            <li><a class="button" href="/penetracni-testovani.html">Penetrační testování</a></li>
-            <li><a class="button" href="/testing-obecne.html">Testing obečně</a></li>
-            <li><a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a></li>
-            <li><a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a></li>
-            <li><a class="button" href="/zatezove-testovani.html">Zátěžové testování</a></li>
-        </ul>
-    </div>
-
-    <div class="content">
-        <p class="big-text">Playwright MSTest + .Net</p>
-        <p>Instalace:</p>
-        <p> Playwright byl vytvořen speciálně pro potřeby end-to-end testování. Playwright
-            podporuje všechny moderní renderovací enginy včetně Chromium, WebKit a
-            Firefox. Testujte v systémech Windows, Linux a macOS, lokálně nebo na CI,
-            bezobslužně nebo v čele s nativní mobilní emulací.</p>
-        <p>Můžete se rozhodnout použít základní třídy NUnit nebo základní třídy MSTest,
-            které Playwright poskytuje pro psaní komplexních testů. Tyto třídy podporují
-            spouštění testů na více modulech prohlížeče, paralelní testy, úpravu možností
-            spuštění/kontextu a získání instance Page/BrowserContext na test z krabice.
-            Alternativně můžete knihovnu použít k ručnímu zápisu testovací infrastruktury.</p>
-        <p>Začněte vytvořením nového projektu pomocí rozhraní . Tím se vytvoří adresář,
-            který obsahuje soubor:</p>
-
-        <div class="code-box">
-            <ul class="not-dot">
-                <li>dotnet newPlaywrightTestsUnitTest1.cs</li>
-                <li></li>
-                dotnet new mstest -n PlaywrightTests cd PlaywrightTests
-            </ul>
-        </div>
-
-        <p>
-            Nainstalujte potřebné závislosti Playwright:</p>
-        <div class="code-box">
-            <ul class="not-dot">
-                <li></li>
-                dotnet add package Microsoft.Playwright.MSTest
-            </ul>
-        </div>
-        <p>Sestavte projekt tak, aby byl k dispozici uvnitř adresáře:playwright.ps1bin</p>
-        <div class="code-box">
-            <ul class="not-dot">
-                <li></li>
-                dotnet build
-            </ul>
-        </div>
-        <p>Nainstalujte požadované prohlížeče nahrazením skutečným názvem výstupní
-            složky, např.: netXnet6.0</p>
-        <div class="code-box">
-            <ul class="not-dot">
-                <li>pwsh bin/Debug/net7.0/playwright.ps1 install</li>
-            </ul>
-        </div>
-        <p>Pokud není k dispozici, musíte nainstalovat PowerShell.pwsh</p>
-        <p>Přidání příkladů testů.</p>
-        <p>Upravte soubor pomocí níže uvedeného kódu a vytvořte příklad kompletního
-            testu: UnitTest1.cs</p>
-        <div class="code-box">
-            <ul class="not-dot">
-                <li>using System.Text.RegularExpressions;</li>
-                <li>using System.Threading.Tasks;</li>
-                <li>using Microsoft.Playwright;</li>
-                <li>using Microsoft.Playwright.MSTest;</li>
-                <li>using Microsoft.VisualStudio.TestTools.UnitTesting;</li>
-                <li>namespace PlaywrightTests;</li>
-                <li>[TestClass]</li>
-                <li>public class UnitTest1 : PlaywrightTest</li>
-                <li>{</li>
-                <li>[TestMethod]</li>
-                <li>public async Task HomepageHasPlaywrightInTitleAndGetStartedLinkLinkingtoTheIntr
-                    oPage()
+    <h1>Testing Docs CZ</h1>
+    <h2>Dokumentace pro všechny testery</h2>
+    <hr>
+    <div class="menu">
+        <center>
+            <ul>
+                <li class="menu-item"><a class="button" href="/index.html">Domů</a></li>
+                <li class="menu-item"><a class="button" href="/podpora.html">Podpora</a></li>
+                <li class="menu-item"><a class="button" href="/mapa-webu.html">Mapa webu</a></li>
+                <li class="menu-item"><a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
                 </li>
-                <li>{</li>
-                <li>await Page.GotoAsync("
-                    <https:
-                    //playwright.dev>");
-                </li>
-                <li>// Expect a title "to contain" a substring.</li>
-                <li>await Expect(Page).ToHaveTitleAsync(new Regex("Playwright"));</li>
-                <li>// create a locator</li>
-                <li>var getStarted = Page.GetByRole(AriaRole.Link, new() { Name ="Get started" });</li>
-                <li>// Expect an attribute "to be strictly equal" to the value.</li>
-                <li>await Expect(getStarted).ToHaveAttributeAsync("href", "/docs/intro");</li>
-                <li>// Click the get started link.</li>
-                <li>await getStarted.ClickAsync();</li>
-                <li>// Expects the URL to contain intro.</li>
-                <li>await Expect(Page).ToHaveURLAsync(new Regex(".*intro"));</li>
-                <li>}</li>
-                <li>}</li>
             </ul>
-        </div>
-
-        <p>Spuštění ukázkových testů.</p>
-
-        <p>Ve výchozím nastavení budou testy spuštěny na chromu. To lze konfigurovat
-            pomocí proměnné prostředí nebo úpravou možností konfigurace spuštění.
-            Testy jsou spouštěny v bezobslužném režimu, což znamená, že se při spuštění
-            testů neotevře žádný prohlížeč. Výsledky testů a protokoly testů se zobrazí v
-            terminálu.BROWSER</p>
-        <div class="code-box">
-            <ul class="not-dot">
-                <li>dotnet test – MSTest.Parallelize.Workers=5</li>
-            </ul>
-        </div>
-        <p>Podívejte se na náš dokument o Test Runners, kde se dozvíte více o spouštění
-            testů v režimu hlavy, spouštění více testů, spouštění konkrétních konfigurací
-            atd.</p>
+        </center>
     </div>
+    <hr>
 
-    <div class="articles">
-        <table>
-            <caption>Nejdůležitější články:</caption>
-            <tr>
-                <th>
-                    <li><a class="button" href="co-je-automatizovane-testovani.html">Co je automatizované
-                        testování</a>
+    <div class="flexbox">
+        <div class="navigation">
+            <table>
+                <caption>
+                    Rubriky:
+                </caption>
+                <tr>
+                    <th>
+                        <li>
+                            <a class="button" href="/automatizovane-testovani.html">Automatizované testování</a>
+                        </li>
+                        <li><a class="button" href="/nastroje.html">Nástroje</a></li>
+                        <li>
+                            <a class="button" href="/penetracni-testovani.html">Penetrační testování</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testing-obecne.html">Testing obečně</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/zatezove-testovani.html">Zátěžové testování</a>
+                        </li>
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content">
+            <p class="big-text">Playwright MSTest + .Net</p>
+            <p>Instalace:</p>
+            <p> Playwright byl vytvořen speciálně pro potřeby end-to-end testování. Playwright
+                podporuje všechny moderní renderovací enginy včetně Chromium, WebKit a
+                Firefox. Testujte v systémech Windows, Linux a macOS, lokálně nebo na CI,
+                bezobslužně nebo v čele s nativní mobilní emulací.</p>
+            <p>Můžete se rozhodnout použít základní třídy NUnit nebo základní třídy MSTest,
+                které Playwright poskytuje pro psaní komplexních testů. Tyto třídy podporují
+                spouštění testů na více modulech prohlížeče, paralelní testy, úpravu možností
+                spuštění/kontextu a získání instance Page/BrowserContext na test z krabice.
+                Alternativně můžete knihovnu použít k ručnímu zápisu testovací infrastruktury.</p>
+            <p>Začněte vytvořením nového projektu pomocí rozhraní . Tím se vytvoří adresář,
+                který obsahuje soubor:</p>
+
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>dotnet newPlaywrightTestsUnitTest1.cs</li>
+                    <li></li>
+                    dotnet new mstest -n PlaywrightTests cd PlaywrightTests
+                </ul>
+            </div>
+
+            <p>
+                Nainstalujte potřebné závislosti Playwright:</p>
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li></li>
+                    dotnet add package Microsoft.Playwright.MSTest
+                </ul>
+            </div>
+            <p>Sestavte projekt tak, aby byl k dispozici uvnitř adresáře:playwright.ps1bin</p>
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li></li>
+                    dotnet build
+                </ul>
+            </div>
+            <p>Nainstalujte požadované prohlížeče nahrazením skutečným názvem výstupní
+                složky, např.: netXnet6.0</p>
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>pwsh bin/Debug/net7.0/playwright.ps1 install</li>
+                </ul>
+            </div>
+            <p>Pokud není k dispozici, musíte nainstalovat PowerShell.pwsh</p>
+            <p>Přidání příkladů testů.</p>
+            <p>Upravte soubor pomocí níže uvedeného kódu a vytvořte příklad kompletního
+                testu: UnitTest1.cs</p>
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>using System.Text.RegularExpressions;</li>
+                    <li>using System.Threading.Tasks;</li>
+                    <li>using Microsoft.Playwright;</li>
+                    <li>using Microsoft.Playwright.MSTest;</li>
+                    <li>using Microsoft.VisualStudio.TestTools.UnitTesting;</li>
+                    <li>namespace PlaywrightTests;</li>
+                    <li>[TestClass]</li>
+                    <li>public class UnitTest1 : PlaywrightTest</li>
+                    <li>{</li>
+                    <li>[TestMethod]</li>
+                    <li>public async Task HomepageHasPlaywrightInTitleAndGetStartedLinkLinkingtoTheIntr
+                        oPage()
                     </li>
-                    <li><a class="button" href="otazky-a-odpovedi-playwright.html">Otázky a odpovědí k
-                        Playwright</a></li>
-                </th>
-            </tr>
-        </table>
+                    <li>{</li>
+                    <li>await Page.GotoAsync("
+                        <https: //playwright.dev>");
+                    </li>
+                    <li>// Expect a title "to contain" a substring.</li>
+                    <li>await Expect(Page).ToHaveTitleAsync(new Regex("Playwright"));</li>
+                    <li>// create a locator</li>
+                    <li>var getStarted = Page.GetByRole(AriaRole.Link, new() { Name ="Get started" });</li>
+                    <li>// Expect an attribute "to be strictly equal" to the value.</li>
+                    <li>await Expect(getStarted).ToHaveAttributeAsync("href", "/docs/intro");</li>
+                    <li>// Click the get started link.</li>
+                    <li>await getStarted.ClickAsync();</li>
+                    <li>// Expects the URL to contain intro.</li>
+                    <li>await Expect(Page).ToHaveURLAsync(new Regex(".*intro"));</li>
+                    <li>}</li>
+                    <li>}</li>
+                </ul>
+            </div>
+
+            <p>Spuštění ukázkových testů.</p>
+
+            <p>Ve výchozím nastavení budou testy spuštěny na chromu. To lze konfigurovat
+                pomocí proměnné prostředí nebo úpravou možností konfigurace spuštění.
+                Testy jsou spouštěny v bezobslužném režimu, což znamená, že se při spuštění
+                testů neotevře žádný prohlížeč. Výsledky testů a protokoly testů se zobrazí v
+                terminálu.BROWSER</p>
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>dotnet test – MSTest.Parallelize.Workers=5</li>
+                </ul>
+            </div>
+            <p>Podívejte se na náš dokument o Test Runners, kde se dozvíte více o spouštění
+                testů v režimu hlavy, spouštění více testů, spouštění konkrétních konfigurací
+                atd.</p>
+        </div>
+
+        <div class="articles">
+            <table>
+                <caption>Nejdůležitější články:</caption>
+                <tr>
+                    <th>
+                        <li><a class="button" href="co-je-automatizovane-testovani.html">Co je automatizované
+                                testování</a>
+                        </li>
+                        <li><a class="button" href="otazky-a-odpovedi-playwright.html">Otázky a odpovědí k
+                                Playwright</a></li>
+                    </th>
+                </tr>
+            </table>
+        </div>
     </div>
-</div>
-<footer>Copyright &copy; Lukáš Kaňka 2023</footer>
+    <footer>Copyright &copy; Lukáš Kaňka 2023</footer>
 
 </body>
 

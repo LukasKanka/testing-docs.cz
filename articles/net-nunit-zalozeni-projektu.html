@@ -2,118 +2,141 @@
 <html lang="cz">
 
 <head>
-    <meta content="Dokumentace pro všechny testery" name="description"/>
-    <meta content="Co je automatizované testování" name="keywords"/>
-    <meta content="Lukáš Kaňka" name="author"/>
+    <meta content="Dokumentace pro všechny testery" name="description" />
+    <meta content="Co je automatizované testování" name="keywords" />
+    <meta content="Lukáš Kaňka" name="author" />
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="/style.css" rel="stylesheet">
-    <link href="images/a picture of a text editor on a pc in the style of comics.jpg" rel="shortcut icon"/>
+    <link href="images/a picture of a text editor on a pc in the style of comics.jpg" rel="shortcut icon" />
     <title>Testing Docs - Nunit založení projektu</title>
 </head>
 
 <body>
-<h1>Testing Docs CZ</h1>
-<h2>Dokumentace pro všechny testery</h2>
-<hr>
-<div class="menu">
-    <center>
-        <ul>
-            <li class="menu-item"><a class="button" href="/index.html">Domů</a></li>
-            <li class="menu-item"><a class="button" href="/podpora.html">Podpora</a></li>
-            <li class="menu-item"><a class="button" href="/mapa-webu.html">Mapa webu</a></li>
-            <li class="menu-item"><a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
-            </li>
-        </ul>
-    </center>
-</div>
-<hr>
-
-<div class="flexbox">
-    <div class="navigation">
-        <ul>
-            <li><a class="button" href="/automatizovane-testovani.html">Automatizované testování</a></li>
-            <li><a class="button" href="/nastroje.html">Nástroje</a></li>
-            <li><a class="button" href="/penetracni-testovani.html">Penetrační testování</a></li>
-            <li><a class="button" href="/testing-obecne.html">Testing obečně</a></li>
-            <li><a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a></li>
-            <li><a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a></li>
-            <li><a class="button" href="/zatezove-testovani.html">Zátěžové testování</a></li>
-        </ul>
+    <h1>Testing Docs CZ</h1>
+    <h2>Dokumentace pro všechny testery</h2>
+    <hr>
+    <div class="menu">
+        <center>
+            <ul>
+                <li class="menu-item"><a class="button" href="/index.html">Domů</a></li>
+                <li class="menu-item"><a class="button" href="/podpora.html">Podpora</a></li>
+                <li class="menu-item"><a class="button" href="/mapa-webu.html">Mapa webu</a></li>
+                <li class="menu-item"><a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
+                </li>
+            </ul>
+        </center>
     </div>
+    <hr>
 
-    <div class="content">
-        <!-- Nadpis -->
-        <p class="big-text">Nunit založení projektu</p>
-
-        <!-- Článek -->
-        <p class="strong-text">Nainstalovat do PC:</p>
-        <div class="code-box">
-            <p>.NET 8.0, 7.0 nebo 6.0 s dlouhou podporou.</p>
-            <p>Visual Studio Code nebo Visual Studio 2022 – pouze WIN a MacOS.</p>
+    <div class="flexbox">
+        <div class="navigation">
+            <table>
+                <caption>
+                    Rubriky:
+                </caption>
+                <tr>
+                    <th>
+                        <li>
+                            <a class="button" href="/automatizovane-testovani.html">Automatizované testování</a>
+                        </li>
+                        <li><a class="button" href="/nastroje.html">Nástroje</a></li>
+                        <li>
+                            <a class="button" href="/penetracni-testovani.html">Penetrační testování</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testing-obecne.html">Testing obečně</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/zatezove-testovani.html">Zátěžové testování</a>
+                        </li>
+                    </th>
+                </tr>
+            </table>
         </div>
 
-        <p class="strong-text">Potřebná rozšíření:</p>
-        <div class="code-box">
-            <p>.NET 8.0, 7.0 nebo 6.0 s dlouhou podporou.</p>
-            <p>Visual Studio Code nebo Visual Studio 2022 – pouze WIN a MacOS.</p>
-            <p>.NET Extension Pack</p>
-            <p>C#</p>
-            <p>Nuget Package Manager</p>
+        <div class="content">
+            <!-- Nadpis -->
+            <p class="big-text">Nunit založení projektu</p>
+
+            <!-- Článek -->
+            <p class="strong-text">Nainstalovat do PC:</p>
+            <div class="code-box">
+                <p>.NET 8.0, 7.0 nebo 6.0 s dlouhou podporou.</p>
+                <p>Visual Studio Code nebo Visual Studio 2022 – pouze WIN a MacOS.</p>
+            </div>
+
+            <p class="strong-text">Potřebná rozšíření:</p>
+            <div class="code-box">
+                <p>.NET 8.0, 7.0 nebo 6.0 s dlouhou podporou.</p>
+                <p>Visual Studio Code nebo Visual Studio 2022 – pouze WIN a MacOS.</p>
+                <p>.NET Extension Pack</p>
+                <p>C#</p>
+                <p>Nuget Package Manager</p>
+            </div>
+
+            <p class="strong-text">Postup v Visual Studio Code:</p>
+            <div class="code-box">
+                <p>dotnet new nunit</p>
+                <p>dotnet new nunit -n MyNUnitProject —> vytvoří novou složku s projektemnázev je možno upravit</p>
+                <p>dotnet add package Nunit3TestAdapter —> nutné také stáhnout</p>
+                <p>dotnet add package NUnit.ConsoleRunner –> GitHub Actions</p>
+                <p>dotnet add package Selenium.WebDriver –> stahne knihovny selenium přejít do složky projektu</p>
+                <p>dotnet add package Selenium.Support</p>
+            </div>
+            <p class="strong-text">Pokud se dělají PageObject:</p>
+            <div class="code-box">
+                <p>dotnet add package DotNetSeleniumExtras.PageObjects.Core</p>
+                <p>dotnet add package WebDriverManager</p>
+            </div>
+
+            <p class="strong-text">Report:</p>
+            <div class="code-box">
+                <p>NUnit.Allure package do instalovat</p>
+                <p><a class="link-black" href="https://www.youtube.com/watch?v=CWPqO17DIQw" target="_blank">Video 1</a>
+                </p>
+                <p><a class="link-black" href="https://www.youtube.com/watch?v=CWPqO17DIQw" target="_blank">Video 2</a>
+                </p>
+            </div>
+            <hr>
+            <p>Tento návod funguje jak pod Linux (odzkoušené v distribucích EndeavorOS,Ubuntu 22.04), MacOS, Windows 11.
+                Z důvodu kompaktibility jseou je na GitHub pouze samotný kód testu. Ostatnísoubory a složky se vytvoří
+                po
+                založení projektu.</p>
+            <p>Složka TestResults také není součásti verze GitHub.</p>
+
+            <p class="strong-text">Aby test prošel je potřeba zkontrolovat hlavičku testu:</p>
+            <div class="code-box">
+                <p>using OpenQA.Selenium;</p>
+                <p>using OpenQA.Selenium.Chrome;</p>
+                <p>using System;</p>
+                <p>using NUnit.Framework;</p>
+                <p>using System.Threading;</p>
+            </div>
         </div>
 
-        <p class="strong-text">Postup v Visual Studio Code:</p>
-        <div class="code-box">
-            <p>dotnet new nunit</p>
-            <p>dotnet new nunit -n MyNUnitProject —> vytvoří novou složku s projektemnázev je možno upravit</p>
-            <p>dotnet add package Nunit3TestAdapter —> nutné také stáhnout</p>
-            <p>dotnet add package NUnit.ConsoleRunner –> GitHub Actions</p>
-            <p>dotnet add package Selenium.WebDriver –> stahne knihovny selenium přejít do složky projektu</p>
-            <p>dotnet add package Selenium.Support</p>
-        </div>
-        <p class="strong-text">Pokud se dělají PageObject:</p>
-        <div class="code-box">
-            <p>dotnet add package DotNetSeleniumExtras.PageObjects.Core</p>
-            <p>dotnet add package WebDriverManager</p>
-        </div>
-
-        <p class="strong-text">Report:</p>
-        <div class="code-box">
-            <p>NUnit.Allure package do instalovat</p>
-            <p><a class="link-black" href="https://www.youtube.com/watch?v=CWPqO17DIQw" target="_blank">Video 1</a></p>
-            <p><a class="link-black" href="https://www.youtube.com/watch?v=CWPqO17DIQw" target="_blank">Video 2</a></p>
-        </div>
-        <hr>
-        <p>Tento návod funguje jak pod Linux (odzkoušené v distribucích EndeavorOS,Ubuntu 22.04), MacOS, Windows 11.
-            Z důvodu kompaktibility jseou je na GitHub pouze samotný kód testu. Ostatnísoubory a složky se vytvoří po
-            založení projektu.</p>
-        <p>Složka TestResults také není součásti verze GitHub.</p>
-
-        <p class="strong-text">Aby test prošel je potřeba zkontrolovat hlavičku testu:</p>
-        <div class="code-box">
-            <p>using OpenQA.Selenium;</p>
-            <p>using OpenQA.Selenium.Chrome;</p>
-            <p>using System;</p>
-            <p>using NUnit.Framework;</p>
-            <p>using System.Threading;</p>
+        <div class="articles">
+            <table>
+                <caption>Nejdůležitější články:</caption>
+                <tr>
+                    <th>
+                        <li><a class="button" href="co-je-automatizovane-testovani.html">Co je automatizované
+                                testování</a></li>
+                        <li><a class="button" href="otazky-a-odpovedi-playwright.html">Otázky a odpovědí k
+                                Playwright</a></li>
+                    </th>
+                </tr>
+            </table>
         </div>
     </div>
-
-    <div class="articles">
-        <table>
-            <caption>Nejdůležitější články:</caption>
-            <tr>
-                <th>
-                    <li><a class="button" href="co-je-automatizovane-testovani.html">Co je automatizované
-                        testování</a></li>
-                    <li><a class="button" href="otazky-a-odpovedi-playwright.html">Otázky a odpovědí k
-                        Playwright</a></li>
-                </th>
-            </tr>
-        </table>
-    </div>
-</div>
-<footer>Copyright &copy; Lukáš Kaňka 2023</footer>
+    <footer>Copyright &copy; Lukáš Kaňka 2023</footer>
 
 </body>
+
 </html>

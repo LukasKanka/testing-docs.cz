@@ -2,87 +2,105 @@
 <html lang="cz">
 
 <head>
-    <meta content="Dokumentace pro všechny testery" name="description"/>
-    <meta content="Playwright, Automatizované testování, Mocha reporter" name="keywords"/>
-    <meta content="Lukáš Kaňka" name="author"/>
+    <meta content="Dokumentace pro všechny testery" name="description" />
+    <meta content="Playwright, Automatizované testování, Mocha reporter" name="keywords" />
+    <meta content="Lukáš Kaňka" name="author" />
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="/style.css" rel="stylesheet">
-    <link href="images/a picture of a text editor on a pc in the style of comics.jpg" rel="shortcut icon"/>
+    <link href="images/a picture of a text editor on a pc in the style of comics.jpg" rel="shortcut icon" />
     <title>Testing Docs - Playwright Mocha Reporter</title>
 </head>
 
 <body>
-<h1>Testing Docs CZ</h1>
-<h2>Dokumentace pro všechny testery</h2>
-<hr>
-<div class="menu">
-    <center>
-        <ul>
-            <li class="menu-item"><a class="button" href="/index.html">Domů</a></li>
-            <li class="menu-item"><a class="button" href="/podpora.html">Podpora</a></li>
-            <li class="menu-item"><a class="button" href="/mapa-webu.html">Mapa webu</a></li>
-            <li class="menu-item"><a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
-            </li>
-        </ul>
-    </center>
-</div>
-<hr>
-
-<div class="flexbox">
-    <div class="navigation">
-        <ul>
-            <li><a class="button" href="/automatizovane-testovani.html">Automatizované testování</a></li>
-            <li><a class="button" href="/nastroje.html">Nástroje</a></li>
-            <li><a class="button" href="/penetracni-testovani.html">Penetrační testování</a></li>
-            <li><a class="button" href="/testing-obecne.html">Testing obečně</a></li>
-            <li><a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a></li>
-            <li><a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a></li>
-            <li><a class="button" href="/zatezove-testovani.html">Zátěžové testování</a></li>
-        </ul>
+    <h1>Testing Docs CZ</h1>
+    <h2>Dokumentace pro všechny testery</h2>
+    <hr>
+    <div class="menu">
+        <center>
+            <ul>
+                <li class="menu-item"><a class="button" href="/index.html">Domů</a></li>
+                <li class="menu-item"><a class="button" href="/podpora.html">Podpora</a></li>
+                <li class="menu-item"><a class="button" href="/mapa-webu.html">Mapa webu</a></li>
+                <li class="menu-item"><a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
+                </li>
+            </ul>
+        </center>
     </div>
+    <hr>
 
-    <div class="content">
-        <p class="big-text">Playwright Mocha Reporter</p>
-        <p>Mocha HTML reporter.</p>
-        <p>Mocha-html-reporter je knihovna, která umožňuje generovat HTML reporty protesty napsané pomocí Mocha
-            frameworku (který lze použít i s Playwrightem).</p>
-        <p>Pro instalaci stačí spustit příkaz:</p>
-        <div class="code-box">
-            <p>npm install mocha mocha-html-reporter --save-dev</p>
+    <div class="flexbox">
+        <div class="navigation">
+            <table>
+                <caption>
+                    Rubriky:
+                </caption>
+                <tr>
+                    <th>
+                        <li>
+                            <a class="button" href="/automatizovane-testovani.html">Automatizované testování</a>
+                        </li>
+                        <li><a class="button" href="/nastroje.html">Nástroje</a></li>
+                        <li>
+                            <a class="button" href="/penetracni-testovani.html">Penetrační testování</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testing-obecne.html">Testing obečně</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/zatezove-testovani.html">Zátěžové testování</a>
+                        </li>
+                    </th>
+                </tr>
+            </table>
         </div>
-        <p>Poté je třeba upravit konfigurační soubor pro Mocha a přidat plugin progenerování HTML reportů:</p>
-        <div class="code-box">
-            <p>const Mocha = require('mocha');</p>
-            <p>const mocha = new Mocha</p>
-            <p>({</p>
-            <p>reporter: 'mocha-html-reporter',</p>
-            <p>reporterOptions: {</p>
-            <p>reportDir: './test-reports',</p>
-            <p>reportName: 'test-report',</p>
-            <p>reportTitle: 'Test Report'</p>
-            <p>}</p>
-            <p>});</p>
-        </div>
-        <p>Poté je možné spustit testy pomocí Mocha a HTML, report se vygenerujeautomaticky. vložíme:</p>
-        <div class="code-box">
-            <p>// Vytvořte HTML soubor pro report</p>
-            <p>reportconst fs = require('fs');</p>
-            <p>const date = new Date().toISOString().substring(0, 19).replace('T', ' ');</p>
-            <p>const reportFileName = `report-${date}.html`;</p>
-            <p>const reportFile = fs.createWriteStream(reportFileName);</p>
-            <p>reportFile.write('
-                <html>
-                <https:
-                //zive.cz>
 
-                <body>');
-            </p>
-            <p>reportFile.write('
-            <h1>Example Report</h1>');</p>
-            <p>reportFile.write(`
-            <p>Tested at ${date}</p>`);</p>
-            <p>reportFile.write('
+        <div class="content">
+            <p class="big-text">Playwright Mocha Reporter</p>
+            <p>Mocha HTML reporter.</p>
+            <p>Mocha-html-reporter je knihovna, která umožňuje generovat HTML reporty protesty napsané pomocí Mocha
+                frameworku (který lze použít i s Playwrightem).</p>
+            <p>Pro instalaci stačí spustit příkaz:</p>
+            <div class="code-box">
+                <p>npm install mocha mocha-html-reporter --save-dev</p>
+            </div>
+            <p>Poté je třeba upravit konfigurační soubor pro Mocha a přidat plugin progenerování HTML reportů:</p>
+            <div class="code-box">
+                <p>const Mocha = require('mocha');</p>
+                <p>const mocha = new Mocha</p>
+                <p>({</p>
+                <p>reporter: 'mocha-html-reporter',</p>
+                <p>reporterOptions: {</p>
+                <p>reportDir: './test-reports',</p>
+                <p>reportName: 'test-report',</p>
+                <p>reportTitle: 'Test Report'</p>
+                <p>}</p>
+                <p>});</p>
+            </div>
+            <p>Poté je možné spustit testy pomocí Mocha a HTML, report se vygenerujeautomaticky. vložíme:</p>
+            <div class="code-box">
+                <p>// Vytvořte HTML soubor pro report</p>
+                <p>reportconst fs = require('fs');</p>
+                <p>const date = new Date().toISOString().substring(0, 19).replace('T', ' ');</p>
+                <p>const reportFileName = `report-${date}.html`;</p>
+                <p>const reportFile = fs.createWriteStream(reportFileName);</p>
+                <p>reportFile.write('
+                    <html>
+                    <https: //zive.cz>
+
+                        <body>');
+                </p>
+                <p>reportFile.write('
+                <h1>Example Report</h1>');</p>
+                <p>reportFile.write(`
+                <p>Tested at ${date}</p>`);</p>
+                <p>reportFile.write('
 </body>
 
 </html>');</p>
@@ -98,11 +116,11 @@
         <tr>
             <th>
                 <li><a class="button" href="co-je-automatizovane-testovani.html" target="_blank">Co je
-                    automatizované
-                    testování</a>
+                        automatizované
+                        testování</a>
                 </li>
                 <li><a class="button" href="otazky-a-odpovedi-playwright.html">Otázky a odpovědí k
-                    Playwright</a></li>
+                        Playwright</a></li>
             </th>
         </tr>
     </table>

@@ -2,242 +2,261 @@
 <html lang="cz">
 
 <head>
-    <meta content="Dokumentace pro všechny testery" name="description"/>
-    <meta content="¨Playwright, otázky a odpovědi, automatizované testování" name="keywords"/>
-    <meta content="Lukáš Kaňka" name="author"/>
+    <meta content="Dokumentace pro všechny testery" name="description" />
+    <meta content="¨Playwright, otázky a odpovědi, automatizované testování" name="keywords" />
+    <meta content="Lukáš Kaňka" name="author" />
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="/style.css" rel="stylesheet">
-    <link href="images/a picture of a text editor on a pc in the style of comics.jpg" rel="shortcut icon"/>
+    <link href="images/a picture of a text editor on a pc in the style of comics.jpg" rel="shortcut icon" />
     <title>Testing Docs - Otázky a odpovědi k Playwright</title>
 </head>
 
 <body>
-<h1>Testing Docs CZ</h1>
-<h2>Dokumentace pro všechny testery</h2>
-<hr>
-<div class="menu">
-    <center>
-        <ul>
-            <li class="menu-item"><a class="button" href="/index.html">Domů</a></li>
-            <li class="menu-item"><a class="button" href="/podpora.html">Podpora</a></li>
-            <li class="menu-item"><a class="button" href="/mapa-webu.html">Mapa webu</a></li>
-            <li class="menu-item"><a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
-            </li>
-        </ul>
-    </center>
-</div>
-<hr>
-
-<div class="flexbox">
-    <div class="navigation">
-        <ul>
-            <li><a class="button" href="/automatizovane-testovani.html">Automatizované testování</a></li>
-            <li><a class="button" href="/nastroje.html">Nástroje</a></li>
-            <li><a class="button" href="/penetracni-testovani.html">Penetrační testování</a></li>
-            <li><a class="button" href="/testing-obecne.html">Testing obečně</a></li>
-            <li><a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a></li>
-            <li><a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a></li>
-            <li><a class="button" href="/zatezove-testovani.html">Zátěžové testování</a></li>
-        </ul>
-    </div>
-
-    <div class="content">
-        <p class="big-text">Otázky a odpovědí k Playwright</p>
-
-        <p>Téma otázek:</p>
-
-        <div class="code-box">
-            <ul class="not-dot">
-                <li>1-8 – Úvod</li>
-                <li>9-13 – První skript</li>
-                <li>14-19 - Elementy interakce</li>
-                <li>20-22 – Locatory</li>
-                <li>23-27 – Eventy</li>
-                <li>28-31 – Práce s více stránkami browseru</li>
-                <li>32 – Iframes</li>
-                <li>33-37 – Debugging</li>
-                <li>38-44 – Runner konfigurace</li>
-                <li>45-53 – Runner – jak psát základní testy</li>
-                <li>54-55 – Jak psát testy v Playwright s využitím fixtures</li>
-                <li>56-58 – Testovací artefakty a kde je najdeme</li>
-                <li>59-62 – Runner visuální porovnání</li>
-            </ul>
-        </div>
-
-        <p>Otázky odpovědi:</p>
-
-        <div class="code-box">
-            <ul class="not-dot">
-                <li>1. Co je Playwrigt? – > Knihovna pro automatizaci testů</li>
-                <li>2. Jaký je originální jazyk Playerightu? – > JavaScript</li>
-                <li>3. Které jazyky playwright podporuje? – > JavaScript, Python, TypeScript, .Net</li>
-                <li>4. Co umí Playwright? – > E2E testování, Cross-browser testování, Cross
-                    doménové testování
-                </li>
-                <li>5. Co je hlavní výhodou Playwright? – > Jednotné API pro všechny podporované</li>
-                <li>6. Playwright je : ? – > Asynchronní</li>
-                <li>7. Která klíčová slova je nutné používat při psaní kódu? – > Await, Async</li>
-                <li>8. Které klíčové slovo pozastaví provádění kódu do té doby, než se asynchroní
-                    funkce provede? – > Await
-                </li>
-                <li>9. Jaká je zkratka JavaScriptové funkce, která se spustí hned, jakmile je definována? – > IIFE
-                </li>
-                <li>10. Vyber správné (nejlepší) volání pro otevření nové stránky – > const page = await
-                    context.newPage()
-                </li>
-                <li>11. Který argument definuje událost, na kterou bude metoda čekat než bude považovat stránku za
-                    načtenou? – > waitUntil
-                </li>
-                <li>12. Jaké zásadní proměnné definujeme hned v úvodu scriptu? – > browser, context, page</li>
-                <li>13. Kterým příkazem dojde k zavření stránky? – > await browser.close()</li>
-                <li>14. Co vykoná metoda page.waitForTimeout(300) – > pozastaví exekuci skriptu na dobo 3000ms</li>
-                <li>15. Veškeré interakce lze provádět těmito způsoby: (více správných odpovědí)– > použitím metody
-                    objektu reprezentující stránku, použitím metody objektu reprezentující element
-                </li>
-                <li>16. Jaké jsou metody pro práci s checkboxem? (více správných odpovědí) – > check, uncheck</li>
-                <li>17. Který selector vybere první element z pole elementů? – > nth=0</li>
-                <li>18. Vlastní selector Playwrightu nth=-1 (v případě, že se jedná o pole s více elementy), mi to
-                    vrátí: – > Poslední hodnotu
-                </li>
-                <li>19. Metoda fill má tyto povinné argumenty: (více správných odpovědí) – > selektor, hodnota pro
-                    vyplnění pole
-                </li>
-                <li>20. Co je to lokátor? – > Představuje logiku, jak získat aktuální reprezentaci elementu webové
-                    stránky
-                </li>
-                <li>21. Vyberte metodu pomocí které se lokátor vytváří: – > page.locator()</li>
-                <li>22. Pro metodu page.locator() platí: (více správných odpovědí) – > je tzv. striktní: selektoru
-                    musí odpovídat pouze konkrétní unikátní element, přijme pouze jeden argument
-                </li>
-                <li>23. Umožňuje Playwright „naslouchat a reagovat“ na událostí odehrávajících se v rámci stránky
-                    nebo browseru, jako např. síťové requesty nebo otevření nové stránky? – > Ano, a je důležité, v
-                    jakém pořadí jsou kódy ve snippetu napsané.
-                </li>
-                <li>24. Co je race condition? – > chyba v systému nebo procesu, ve kterém jsou
-                    výsledky nepředvídatelné při nesprávném pořadí nebo načasování jeho
-                    jednotlivích operací.
-                </li>
-                <li>25. Vyber správné pořadí příkladů: – > “page.waitForReqeuest()
-                    page.goto(”““““)”
-                </li>
-                <li>26. K čemu slouží metoda page.on()? – > k naslouchání specifického eventu,
-                    který se zadá jako argument metody
-                </li>
-                <li>27. K čemu slouží metoda JSON.stringify()? – > převede objekt nebo hodnotu JavaScriptu na
-                    řetězec JSON
-                </li>
-                <li>28. Při vytvoření nové stránky se jako metoda pro čekání použije: – >
-                    context.waitForEvent(“page”)
-                </li>
-                <li>29. Jaká metoda slouží k přepínání mezi dvěma stránkami? – > žádná se nepoužívá, v playwright
-                    můžeme pracovat s oběma najednou
-                </li>
-                <li>30. K čemu slouží metoda console.log()? – > k vypsání výsledků do konsole</li>
-                <li>31. Která metoda se použije pro zpomalení exekuce? – > waitForTimeout</li>
-                <li>32. Která metoda slouží k získání iframe? – > page.frame()</li>
-                <li>33. K čemu se používá nástroj Playwright Inspector? –> Napomáhá při identifikaci a debuggingu
-                    chyb
-                </li>
-                <li>34. Jaké možnosti nabízí Playwright pro debugging? (více správných odpovědí)– > Playwright
-                    Inspector,
-                    Prostřednictvím developer console, Vnitřním
-                    logováním Playwrightu do console
-                </li>
-                <li>35. Jak nastavíme enviromentální proměnnou pro aktivaci Playwright inspector?– > PWDEBUG=1</li>
-                <li>36. Kterou hodnotu musíme přiřadit enviromentální proměnné pro zapnutí
-                    debuggingu v automatizovaném browseru? – > PWDEBUG=“console”
-                </li>
-                <li>37. Jakým způsobem zobrazíme vnitřní logování Playwrightu do konzole? – >
-                    PWDEBUG=“pw:api”
-                </li>
-                <li>38. Jak se jmenuje nativní test runner Playwrightu? –> Playwright Test</li>
-                <li>39. Kdy použijeme test runner Playwright test? – > Testování webových stránek a aplikací</li>
-                <li>40. Co je hlavní výhodou Playwright testu? – > Nativní test runner, který je max kompaktibilní s
-                    playwright automatizační knihovnou a jeho požitím se např. o startování browseru, kontextů a
-                    stránek apod. nemusíte starat.
-                </li>
-                <li>41. Jak musí být pojmenován konfigurační soubor, aby ho po umístění do
-                    kořene projektu testrunner automaticky identifikoval? – >
-                    playwright.config.js
-                </li>
-                <li>42. Jakou hodnotu musí mít property headless, pokud chceme sledovat browser
-                    při exekuci? – > true
-                </li>
-                <li>43. Jak se nazývají testovací konfigurace, které vytváříme v konfiguračním
-                    souboru? – > projects
-                </li>
-                <li>44. Co určují workers? – > Maximální počet paralelně exekuovaných souborů s
-                    testy
-                </li>
-                <li>45. Kterým příkazem v CMD se spouští testy? – > npx playwright test</li>
-                <li>46. Soubory, které obsahují testy, či scénáře s testy, které má Playwright Test
-                    runner spustit, se pojmenovávají: – > [jmeno souboru].spec.js
-                </li>
-                <li>47. Callback funkce je: – > 1. poskytnuta jiná funkce jako argument a je
-                    spuštěna až po splnění určité podmínky v rámci funkce, která ji používá. 2.
-                    často se píše jako anonymní funkce jako argument funkce, která ji používá.
-                </li>
-                <li>48. K čemu slouží metoda test.describe? – > K rozčlenění testů do testovacích
-                    suit
-                </li>
-                <li>49. Co je test objekt? – > Slouží k psaní testů a volání metod souvisejících s
-                    exekucí testů.
-                </li>
-                <li>50. Co je expect objekt? – > Knihovna k verifikaci asertů.</li>
-                <li>51. Jaké 2 argumenty přijímá testovací funkce? – > Název testu a call back
-                    function
-                </li>
-                <li>52. Jakou metodu musím v rámci metody describe doplnit, aby nebyly testy
-                    spouštěny sekvenčně: – > parallel
-                </li>
-                <li>53. Jakou metodou lze exekuci testů provádět souběžně? – > parallel</li>
-                <li>54. Co jsou fixtures? (více správných odpovědí) – > Kousky kódu, funkce,
-                    stringy či jiné datové typy, které umožní velmi flexibilně konfigurovat testy
-                </li>
-                <li>
-                    55. Který příkaz v CMD slouží ke spuštění testů s fixtures, pokud jsou označeny
-                    tagem “@withfixture”? – > npx playwright test –grep=@withfixture
-                </li>
-                <li>56. Co je Playwright Test Viewer? – > Nástroj umožnující prohlédnout si
-                    zaznamenané traces
-                </li>
-                <li>57. Jaké testovací artefakty můžeme definovat? (více správných odpovědí) – >
-                    Video, Screenshots, Trace
-                </li>
-                <li>58. Co vše je možné v Playwright Test Viewer zobrazit? (více správných
-                    odpovědí) – > Screenshoty, seznam všech akcí které proběhly, časová
-                    historie událostí při exekuci testu
-                </li>
-                <li>59. Která metoda slouží pro vizuální testování, kdy dochází k porovnání
-                    snapshotů vygenerovaných při první exekuci se snapshoty z následných
-                    exekucí – > toMatchSnapshot()
-                </li>
-                <li>60. Jakou metodu získáme screenshot? – > screenshot()</li>
-                <li>61. Použitím jaké metody získáme název stránky? – > title()</li>
-                <li>62. Jakým způsobem se snapshoty aktualizují? – > Příkazem npx playwright
-                    test –update-snapshots
+    <h1>Testing Docs CZ</h1>
+    <h2>Dokumentace pro všechny testery</h2>
+    <hr>
+    <div class="menu">
+        <center>
+            <ul>
+                <li class="menu-item"><a class="button" href="/index.html">Domů</a></li>
+                <li class="menu-item"><a class="button" href="/podpora.html">Podpora</a></li>
+                <li class="menu-item"><a class="button" href="/mapa-webu.html">Mapa webu</a></li>
+                <li class="menu-item"><a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
                 </li>
             </ul>
+        </center>
+    </div>
+    <hr>
+
+    <div class="flexbox">
+        <div class="navigation">
+            <table>
+                <caption>
+                    Rubriky:
+                </caption>
+                <tr>
+                    <th>
+                        <li>
+                            <a class="button" href="/automatizovane-testovani.html">Automatizované testování</a>
+                        </li>
+                        <li><a class="button" href="/nastroje.html">Nástroje</a></li>
+                        <li>
+                            <a class="button" href="/penetracni-testovani.html">Penetrační testování</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testing-obecne.html">Testing obečně</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a>
+                        </li>
+                        <li>
+                            <a class="button" href="/zatezove-testovani.html">Zátěžové testování</a>
+                        </li>
+                    </th>
+                </tr>
+            </table>
         </div>
 
-    </div>
-    <div class="articles">
-        <table>
-            <caption>Nejdůležitější články:</caption>
-            <tr>
-                <th>
-                    <li><a class="button" href="co-je-automatizovane-testovani.html">Co je automatizované
-                        testování</a>
+        <div class="content">
+            <p class="big-text">Otázky a odpovědí k Playwright</p>
+
+            <p>Téma otázek:</p>
+
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>1-8 – Úvod</li>
+                    <li>9-13 – První skript</li>
+                    <li>14-19 - Elementy interakce</li>
+                    <li>20-22 – Locatory</li>
+                    <li>23-27 – Eventy</li>
+                    <li>28-31 – Práce s více stránkami browseru</li>
+                    <li>32 – Iframes</li>
+                    <li>33-37 – Debugging</li>
+                    <li>38-44 – Runner konfigurace</li>
+                    <li>45-53 – Runner – jak psát základní testy</li>
+                    <li>54-55 – Jak psát testy v Playwright s využitím fixtures</li>
+                    <li>56-58 – Testovací artefakty a kde je najdeme</li>
+                    <li>59-62 – Runner visuální porovnání</li>
+                </ul>
+            </div>
+
+            <p>Otázky odpovědi:</p>
+
+            <div class="code-box">
+                <ul class="not-dot">
+                    <li>1. Co je Playwrigt? – > Knihovna pro automatizaci testů</li>
+                    <li>2. Jaký je originální jazyk Playerightu? – > JavaScript</li>
+                    <li>3. Které jazyky playwright podporuje? – > JavaScript, Python, TypeScript, .Net</li>
+                    <li>4. Co umí Playwright? – > E2E testování, Cross-browser testování, Cross
+                        doménové testování
                     </li>
-                    <li><a class="button" href="otazky-a-odpovedi-playwright.html">Otázky a odpovědí k
-                        Playwright</a></li>
-                </th>
-            </tr>
-        </table>
+                    <li>5. Co je hlavní výhodou Playwright? – > Jednotné API pro všechny podporované</li>
+                    <li>6. Playwright je : ? – > Asynchronní</li>
+                    <li>7. Která klíčová slova je nutné používat při psaní kódu? – > Await, Async</li>
+                    <li>8. Které klíčové slovo pozastaví provádění kódu do té doby, než se asynchroní
+                        funkce provede? – > Await
+                    </li>
+                    <li>9. Jaká je zkratka JavaScriptové funkce, která se spustí hned, jakmile je definována? – > IIFE
+                    </li>
+                    <li>10. Vyber správné (nejlepší) volání pro otevření nové stránky – > const page = await
+                        context.newPage()
+                    </li>
+                    <li>11. Který argument definuje událost, na kterou bude metoda čekat než bude považovat stránku za
+                        načtenou? – > waitUntil
+                    </li>
+                    <li>12. Jaké zásadní proměnné definujeme hned v úvodu scriptu? – > browser, context, page</li>
+                    <li>13. Kterým příkazem dojde k zavření stránky? – > await browser.close()</li>
+                    <li>14. Co vykoná metoda page.waitForTimeout(300) – > pozastaví exekuci skriptu na dobo 3000ms</li>
+                    <li>15. Veškeré interakce lze provádět těmito způsoby: (více správných odpovědí)– > použitím metody
+                        objektu reprezentující stránku, použitím metody objektu reprezentující element
+                    </li>
+                    <li>16. Jaké jsou metody pro práci s checkboxem? (více správných odpovědí) – > check, uncheck</li>
+                    <li>17. Který selector vybere první element z pole elementů? – > nth=0</li>
+                    <li>18. Vlastní selector Playwrightu nth=-1 (v případě, že se jedná o pole s více elementy), mi to
+                        vrátí: – > Poslední hodnotu
+                    </li>
+                    <li>19. Metoda fill má tyto povinné argumenty: (více správných odpovědí) – > selektor, hodnota pro
+                        vyplnění pole
+                    </li>
+                    <li>20. Co je to lokátor? – > Představuje logiku, jak získat aktuální reprezentaci elementu webové
+                        stránky
+                    </li>
+                    <li>21. Vyberte metodu pomocí které se lokátor vytváří: – > page.locator()</li>
+                    <li>22. Pro metodu page.locator() platí: (více správných odpovědí) – > je tzv. striktní: selektoru
+                        musí odpovídat pouze konkrétní unikátní element, přijme pouze jeden argument
+                    </li>
+                    <li>23. Umožňuje Playwright „naslouchat a reagovat“ na událostí odehrávajících se v rámci stránky
+                        nebo browseru, jako např. síťové requesty nebo otevření nové stránky? – > Ano, a je důležité, v
+                        jakém pořadí jsou kódy ve snippetu napsané.
+                    </li>
+                    <li>24. Co je race condition? – > chyba v systému nebo procesu, ve kterém jsou
+                        výsledky nepředvídatelné při nesprávném pořadí nebo načasování jeho
+                        jednotlivích operací.
+                    </li>
+                    <li>25. Vyber správné pořadí příkladů: – > “page.waitForReqeuest()
+                        page.goto(”““““)”
+                    </li>
+                    <li>26. K čemu slouží metoda page.on()? – > k naslouchání specifického eventu,
+                        který se zadá jako argument metody
+                    </li>
+                    <li>27. K čemu slouží metoda JSON.stringify()? – > převede objekt nebo hodnotu JavaScriptu na
+                        řetězec JSON
+                    </li>
+                    <li>28. Při vytvoření nové stránky se jako metoda pro čekání použije: – >
+                        context.waitForEvent(“page”)
+                    </li>
+                    <li>29. Jaká metoda slouží k přepínání mezi dvěma stránkami? – > žádná se nepoužívá, v playwright
+                        můžeme pracovat s oběma najednou
+                    </li>
+                    <li>30. K čemu slouží metoda console.log()? – > k vypsání výsledků do konsole</li>
+                    <li>31. Která metoda se použije pro zpomalení exekuce? – > waitForTimeout</li>
+                    <li>32. Která metoda slouží k získání iframe? – > page.frame()</li>
+                    <li>33. K čemu se používá nástroj Playwright Inspector? –> Napomáhá při identifikaci a debuggingu
+                        chyb
+                    </li>
+                    <li>34. Jaké možnosti nabízí Playwright pro debugging? (více správných odpovědí)– > Playwright
+                        Inspector,
+                        Prostřednictvím developer console, Vnitřním
+                        logováním Playwrightu do console
+                    </li>
+                    <li>35. Jak nastavíme enviromentální proměnnou pro aktivaci Playwright inspector?– > PWDEBUG=1</li>
+                    <li>36. Kterou hodnotu musíme přiřadit enviromentální proměnné pro zapnutí
+                        debuggingu v automatizovaném browseru? – > PWDEBUG=“console”
+                    </li>
+                    <li>37. Jakým způsobem zobrazíme vnitřní logování Playwrightu do konzole? – >
+                        PWDEBUG=“pw:api”
+                    </li>
+                    <li>38. Jak se jmenuje nativní test runner Playwrightu? –> Playwright Test</li>
+                    <li>39. Kdy použijeme test runner Playwright test? – > Testování webových stránek a aplikací</li>
+                    <li>40. Co je hlavní výhodou Playwright testu? – > Nativní test runner, který je max kompaktibilní s
+                        playwright automatizační knihovnou a jeho požitím se např. o startování browseru, kontextů a
+                        stránek apod. nemusíte starat.
+                    </li>
+                    <li>41. Jak musí být pojmenován konfigurační soubor, aby ho po umístění do
+                        kořene projektu testrunner automaticky identifikoval? – >
+                        playwright.config.js
+                    </li>
+                    <li>42. Jakou hodnotu musí mít property headless, pokud chceme sledovat browser
+                        při exekuci? – > true
+                    </li>
+                    <li>43. Jak se nazývají testovací konfigurace, které vytváříme v konfiguračním
+                        souboru? – > projects
+                    </li>
+                    <li>44. Co určují workers? – > Maximální počet paralelně exekuovaných souborů s
+                        testy
+                    </li>
+                    <li>45. Kterým příkazem v CMD se spouští testy? – > npx playwright test</li>
+                    <li>46. Soubory, které obsahují testy, či scénáře s testy, které má Playwright Test
+                        runner spustit, se pojmenovávají: – > [jmeno souboru].spec.js
+                    </li>
+                    <li>47. Callback funkce je: – > 1. poskytnuta jiná funkce jako argument a je
+                        spuštěna až po splnění určité podmínky v rámci funkce, která ji používá. 2.
+                        často se píše jako anonymní funkce jako argument funkce, která ji používá.
+                    </li>
+                    <li>48. K čemu slouží metoda test.describe? – > K rozčlenění testů do testovacích
+                        suit
+                    </li>
+                    <li>49. Co je test objekt? – > Slouží k psaní testů a volání metod souvisejících s
+                        exekucí testů.
+                    </li>
+                    <li>50. Co je expect objekt? – > Knihovna k verifikaci asertů.</li>
+                    <li>51. Jaké 2 argumenty přijímá testovací funkce? – > Název testu a call back
+                        function
+                    </li>
+                    <li>52. Jakou metodu musím v rámci metody describe doplnit, aby nebyly testy
+                        spouštěny sekvenčně: – > parallel
+                    </li>
+                    <li>53. Jakou metodou lze exekuci testů provádět souběžně? – > parallel</li>
+                    <li>54. Co jsou fixtures? (více správných odpovědí) – > Kousky kódu, funkce,
+                        stringy či jiné datové typy, které umožní velmi flexibilně konfigurovat testy
+                    </li>
+                    <li>
+                        55. Který příkaz v CMD slouží ke spuštění testů s fixtures, pokud jsou označeny
+                        tagem “@withfixture”? – > npx playwright test –grep=@withfixture
+                    </li>
+                    <li>56. Co je Playwright Test Viewer? – > Nástroj umožnující prohlédnout si
+                        zaznamenané traces
+                    </li>
+                    <li>57. Jaké testovací artefakty můžeme definovat? (více správných odpovědí) – >
+                        Video, Screenshots, Trace
+                    </li>
+                    <li>58. Co vše je možné v Playwright Test Viewer zobrazit? (více správných
+                        odpovědí) – > Screenshoty, seznam všech akcí které proběhly, časová
+                        historie událostí při exekuci testu
+                    </li>
+                    <li>59. Která metoda slouží pro vizuální testování, kdy dochází k porovnání
+                        snapshotů vygenerovaných při první exekuci se snapshoty z následných
+                        exekucí – > toMatchSnapshot()
+                    </li>
+                    <li>60. Jakou metodu získáme screenshot? – > screenshot()</li>
+                    <li>61. Použitím jaké metody získáme název stránky? – > title()</li>
+                    <li>62. Jakým způsobem se snapshoty aktualizují? – > Příkazem npx playwright
+                        test –update-snapshots
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="articles">
+            <table>
+                <caption>Nejdůležitější články:</caption>
+                <tr>
+                    <th>
+                        <li><a class="button" href="co-je-automatizovane-testovani.html">Co je automatizované
+                                testování</a>
+                        </li>
+                        <li><a class="button" href="otazky-a-odpovedi-playwright.html">Otázky a odpovědí k
+                                Playwright</a></li>
+                    </th>
+                </tr>
+            </table>
+        </div>
     </div>
-</div>
-<footer>Copyright &copy; Lukáš Kaňka 2023</footer>
+    <footer>Copyright &copy; Lukáš Kaňka 2023</footer>
 
 </body>
 

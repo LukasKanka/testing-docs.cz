@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="cz">
   <head>
     <meta content="Dokumentace pro všechny testery" name="description" />
-    <meta content="Co je automatizované testování" name="keywords" />
+    <meta content="xUnit, automatizované testování, C#" name="keywords" />
     <meta content="Lukáš Kaňka" name="author" />
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -11,7 +11,7 @@
       href="images/a picture of a text editor on a pc in the style of comics.jpg"
       rel="shortcut icon"
     />
-    <title>Testing Docs - Co je automatizované testování</title>
+    <title>Testing Docs - xUnit založení projektu</title>
   </head>
 
   <body>
@@ -83,48 +83,46 @@
       </div>
 
       <div class="content">
-        <p class="big-text">Nuget logování a puštění testu</p>
-        <p class="strong-text">Špouštěč testů do VS Code.</p>
-        <p class="strong-text">Pod Windows:</p>
-        <p>Vytvoříme soubor bash.bat</p>
-        <p>Do něj vložíme:</p>
+        <p class="big-text">xUnit založení projektu</p>
+        <p class="strong-text">Nainstalovat do PC:</p>
+        <div class="code-box">
+          <ul class="not.dot">
+            <li>.NET 7.0 nebo 6.0 s dlouhou podporou</li>
+            <li>Visual Studio Code</li>
+            <li>nebo</li>
+            <li>Visual Studio 2022 – pouze WIN a MacOS</li>
+          </ul>
+        </div>
+
+        <p class="strong-text">Potřebná rozšíření:</p>
+        <div class="code-box">
+          <ul class="not.dot">
+            <li>.NET Extension Pack</li>
+            <li>C#</li>
+            <li>Nuget Package Manager</li>
+          </ul>
+        </div>
+
+        <p class="strong-text">Postup vs code:</p>
         <div class="code-box">
           <ul>
+            <li>dotnet new xunit – vytvoří consolovou aplikaci dotnet</li>
             <li>
-              <@echo off dotnet test
-              –logger:“html;LogFilePath=testresults.html;” /li>
+              add package Selenium.WebDriver – stahne knihovny selenium přejít
+              dosložky projektu
             </li>
           </ul>
         </div>
 
-        <p class="strong-text">Pod Linux:</p>
         <p>
-          Vytvořte nový textový soubor s příponou .sh. Do souboru vložte
-          následujícípříkaz:
+          Tento návod funguje jak pod Linux (odzkoušené v distribucích
+          EndeavorOS,Ubuntu 22.04), MacOS, Windows 11.
         </p>
-        <div class="code-box">
-          <ul>
-            <li>bash Copy code #!/bin/bash dotnet test-</li>
-            <li>logger:“html;LogFilePath=testresults.html”</li>
-          </ul>
-        </div>
-	
-	<p>Uložte soubor a nastavte oprávněnípro spuštění (např. chmod +x
-        název_souboru.sh). </p>
-
-	<p>Tento soubor script bude spouštět testy a uloží
-        výsledek do složky TestResultsv kořenovém adresáři v html. </p>
-
-	<p>Na spoštění
-        testů si můžeme stáhnout plugin Batch Runner. </p>
-
-	<p> Pak stačí kliknoutna bash
-        pravím tlačítkem a kliknout na Run Batch File. Tím spustíme test i
-        slogováním do html. Toto funguje pod MSTest, Nunit a xUnit. Další ze
-        způsobů logování je možné použít knihovnu Nlog.
-</p>
-
-             </div>
+        <p>
+          Z důvodu kompaktibility jseou je na GitHub pouze samotný kód testu.
+          Ostatnísoubory a složky se vytvoří po založení projektu.
+        </p>
+      </div>
       <div class="articles">
         <table>
           <caption>
@@ -150,4 +148,3 @@
     <footer>Copyright &copy; Lukáš Kaňka 2023</footer>
   </body>
 </html>
-

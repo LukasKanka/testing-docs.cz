@@ -24,8 +24,14 @@ body {
   display: inline-block;
   width: 200px;
   height: 20px;
-  position: static;
-  text-align: center;
+  /* position: static;
+  text-align: center; */
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    text-align: center;
+  }
 }
 
 .flexbox {
@@ -53,7 +59,8 @@ body {
   /* ˇPořadí zobrazení */
   .navigation {
     order: -1;
-    flex-direction: column;
+    /* flex-direction: column; */
+    align-self: center;
   }
 
   /* škrývání */
@@ -62,10 +69,9 @@ body {
   } */
 
   /* roletka posuvník */
-  .dropdown-content {
-    overflow: auto;
-    max-height: 100px; /* or any other value */
-  }
+  /* .dropdown-content {
+    overflow: auto; */
+  /* max-height: 100px; or any other value */
 
   .content {
     order: 1;

@@ -30,7 +30,6 @@ body {
 
 .flexbox {
   display: flex;
-  /* flex-direction: column; */
 }
 
 .navigation {
@@ -39,10 +38,6 @@ body {
   padding: 25px;
   /* margin-top: 20px; */
 }
-
-/* .dropdown-content {
-  display: none;
-} */
 
 .content {
   flex: 3;
@@ -62,9 +57,9 @@ body {
   }
 
   /* škrývání */
-  .navigation:hover .dropdown-content {
+  /* .navigation:hover .dropdown-content {
     display: block;
-  }
+  } */
 
   /* roletka posuvník */
   .dropdown-content {
@@ -83,6 +78,7 @@ body {
   margin-top: 25px;
 }
 
+/* Namobilu nezobrazí articles */
 @media screen and (max-width: 600px) {
   .articles {
     display: none;

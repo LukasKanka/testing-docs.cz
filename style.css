@@ -76,6 +76,7 @@ body {
   .content {
     order: 1;
     flex-direction: column;
+    padding: 15px;
   }
 }
 

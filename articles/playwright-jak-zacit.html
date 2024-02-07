@@ -1,147 +1,165 @@
 <!DOCTYPE html>
 <html lang="cz">
-
-<head>
-    <meta content="Dokumentace pro všechny testery" name="description"/>
-    <meta content="Playwright, Automatizované testovaní, Testování software" name="keywords"/>
-    <meta content="Lukáš Kaňka" name="author"/>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <link href="/style.css" rel="stylesheet"/>
-    <link href="images/a picture of a text editor on a pc in the style of comics.jpg" rel="shortcut icon"/>
+  <head>
+    <meta content="Dokumentace pro všechny testery" name="description" />
+    <meta
+      content="Playwright, Automatizované testovaní, Testování software"
+      name="keywords"
+    />
+    <meta content="Lukáš Kaňka" name="author" />
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="/style.css" rel="stylesheet" />
+    <link
+      href="images/a picture of a text editor on a pc in the style of comics.jpg"
+      rel="shortcut icon"
+    />
     <title>Testing Docs - Playwright jak začít</title>
-</head>
+  </head>
 
-<body>
-<h1>Testing Docs CZ</h1>
-<h2>Dokumentace pro všechny testery</h2>
-<hr/>
-<div class="menu">
-    <center>
+  <body>
+    <h1>Testing Docs CZ</h1>
+    <h2>Dokumentace pro všechny testery</h2>
+    <hr />
+    <div class="menu">
+      <center>
         <ul>
-            <li class="menu-item">
-                <a class="button" href="/index.html">Domů</a>
-            </li>
-            <li class="menu-item">
-                <a class="button" href="/podpora.html">Podpora</a>
-            </li>
-            <li class="menu-item">
-                <a class="button" href="/mapa-webu.html">Mapa webu</a>
-            </li>
-            <li class="menu-item">
-                <a class="button" href="/privaci-polici.html">Zásady o ochraně osobních dat</a>
-            </li>
+          <li class="menu-item">
+            <a class="button" href="/index.html">Domů</a>
+          </li>
+          <li class="menu-item">
+            <a class="button" href="/podpora.html">Podpora</a>
+          </li>
+          <li class="menu-item">
+            <a class="button" href="/mapa-webu.html">Mapa webu</a>
+          </li>
+          <li class="menu-item">
+            <a class="button" href="/privaci-polici.html"
+              >Zásady o ochraně osobních dat</a
+            >
+          </li>
         </ul>
-    </center>
-</div>
-<hr/>
-
-<div class="flexbox">
-    <div class="navigation">
-        <table>
-            <caption>
-                Rubriky:
-            </caption>
-            <tr>
-                <th>
-                    <li>
-                        <a class="button" href="/automatizovane-testovani.html">Automatizované testování</a>
-                    </li>
-                    <li><a class="button" href="/nastroje.html">Nástroje</a></li>
-                    <li>
-                        <a class="button" href="/penetracni-testovani.html">Penetrační testování</a>
-                    </li>
-                    <li>
-                        <a class="button" href="/testing-obecne.html">Testing obečně</a>
-                    </li>
-                    <li>
-                        <a class="button" href="/testovani-mobilnich-aplikaci.html">Testování mobilních aplikací</a>
-                    </li>
-                    <li>
-                        <a class="button" href="/testovani-pristupnosti.html">Testování přístupnosti</a>
-                    </li>
-                    <li>
-                        <a class="button" href="/zatezove-testovani.html">Zátěžové testování</a>
-                    </li>
-                </th>
-            </tr>
-        </table>
+      </center>
     </div>
+    <hr />
 
-    <div class="content">
+    <div class="flexbox">
+      <div class="navigation">
+        <table>
+          <caption>
+            Rubriky:
+          </caption>
+          <tr>
+            <th class="not-dot">
+              <li>
+                <a class="button" href="/automatizovane-testovani.html"
+                  >Automatizované testování</a
+                >
+              </li>
+              <li><a class="button" href="/nastroje.html">Nástroje</a></li>
+              <li>
+                <a class="button" href="/penetracni-testovani.html"
+                  >Penetrační testování</a
+                >
+              </li>
+              <li>
+                <a class="button" href="/testing-obecne.html">Testing obečně</a>
+              </li>
+              <li>
+                <a class="button" href="/testovani-mobilnich-aplikaci.html"
+                  >Testování mobilních aplikací</a
+                >
+              </li>
+              <li>
+                <a class="button" href="/testovani-pristupnosti.html"
+                  >Testování přístupnosti</a
+                >
+              </li>
+              <li>
+                <a class="button" href="/zatezove-testovani.html"
+                  >Zátěžové testování</a
+                >
+              </li>
+            </th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="content">
         <p class="big-text">Playwright jak začít</p>
         <p>Založení nového projektu</p>
         <p>
-            Zde je návod jak nainstalovat Playwright jako v freamork k JavaScriptu
-            či TypeScriptu. Playwright navíc podporuje Python, Javu a .Net. Jako
-            první doporučuji naštívit Officiální web
-            <a class="button" href="https://playwright.dev">Playwright enables reliable end-to end testing for
-                modern web
-                apps.</a>
-            Kde najdete skvělou dokumentaci k Playwright.
+          Zde je návod jak nainstalovat Playwright jako v freamork k JavaScriptu
+          či TypeScriptu. Playwright navíc podporuje Python, Javu a .Net. Jako
+          první doporučuji naštívit Officiální web
+          <a class="button" href="https://playwright.dev"
+            >Playwright enables reliable end-to end testing for modern web
+            apps.</a
+          >
+          Kde najdete skvělou dokumentaci k Playwright.
         </p>
         <p>
-            Je nutné stáhnout a nainstalovat
-            <a class="button" href="https://nodejs.org/en">Node.js.</a>
+          Je nutné stáhnout a nainstalovat
+          <a class="button" href="https://nodejs.org/en">Node.js.</a>
         </p>
         <p>
-            Do VSCode stáhnout Extensions
-            <strong>Playwright Test for VSCode</strong>
+          Do VSCode stáhnout Extensions
+          <strong>Playwright Test for VSCode</strong>
         </p>
         <p>
-            Mkdir vytvoří v cmd / terminálu složku pro nový projekt, v místě kde
-            se nacházíme.
+          Mkdir vytvoří v cmd / terminálu složku pro nový projekt, v místě kde
+          se nacházíme.
         </p>
         <p>
-            cd název nového projektu nás přesune do složky nového projektu První
-            dva body je možné udělat v GUI pomocí průzkumníka a pak otevřít
-            terminál v tomto místě a do terminálu už jen vložit npm init -y , tím
-            si připravíme projekt.
+          cd název nového projektu nás přesune do složky nového projektu První
+          dva body je možné udělat v GUI pomocí průzkumníka a pak otevřít
+          terminál v tomto místě a do terminálu už jen vložit npm init -y , tím
+          si připravíme projekt.
         </p>
 
         <div class="code-box">
-            <p>mkdir novy_projekt</p>
-            <p>cd novy_projekt</p>
-            <p>npm init -y</p>
+          <p>mkdir novy_projekt</p>
+          <p>cd novy_projekt</p>
+          <p>npm init -y</p>
         </div>
 
         <p>Tímto nainstalujeme samotný Playwright.</p>
         <div class="code-box">
-            <p>npm i playwright</p>
+          <p>npm i playwright</p>
         </div>
         <p>
-            Instalace nás provede, nastavením jako jestli chcete psát kód v
-            JavaScriptu nebo TypeScriptu.
+          Instalace nás provede, nastavením jako jestli chcete psát kód v
+          JavaScriptu nebo TypeScriptu.
         </p>
         <p>Po instalaci můžeme začít psát samotný test.</p>
         <p>Test spustíme v terminálu v místě testu pomocí:</p>
         <div class="code-box">
-            <p>node test.js</p>
+          <p>node test.js</p>
         </div>
-    </div>
-    <div class="articles">
-
-
+      </div>
+      <div class="articles">
         <table>
-            <caption>
-                Nejdůležitější články:
-            </caption>
-            <tr>
-                <th>
-                    <li>
-                        <a class="button" href="co-je-automatizovane-testovani.html">Co je automatizované
-                            testování</a>
-                    </li>
-                    <li>
-                        <a class="button" href="otazky-a-odpovedi-playwright.html">Otázky a odpovědí k
-                            Playwright</a>
-                    </li>
-                </th>
-            </tr>
+          <caption>
+            Nejdůležitější články:
+          </caption>
+          <tr>
+            <th class="not-dot">
+              <li>
+                <a class="button" href="co-je-automatizovane-testovani.html"
+                  >Co je automatizované testování</a
+                >
+              </li>
+              <li>
+                <a class="button" href="otazky-a-odpovedi-playwright.html"
+                  >Otázky a odpovědí k Playwright</a
+                >
+              </li>
+            </th>
+          </tr>
         </table>
+      </div>
     </div>
-</div>
 
-<footer>Copyright &copy; Lukáš Kaňka 2023</footer>
-</body>
+    <footer>Copyright &copy; Lukáš Kaňka 2023</footer>
+  </body>
 </html>

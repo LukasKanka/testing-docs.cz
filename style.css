@@ -5,6 +5,18 @@
   --special_black_original: black;
 }
 
+nav {
+  display: flex;
+  padding: 10px;
+  gap: 2rem;
+  /* justify-content: center; */
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
 /* Body */
 body {
   background-color: var(--special_black);
@@ -59,7 +71,6 @@ body {
   /* ˇPořadí zobrazení */
   .navigation {
     order: -1;
-    /* flex-direction: column; */
     align-self: center;
   }
 
@@ -75,7 +86,6 @@ body {
 
   .content {
     order: 1;
-    flex-direction: column;
     padding: 15px;
   }
 }
@@ -113,7 +123,7 @@ h2 {
 }
 
 /*.link-white*/
-.button {
+.button-navigace {
   color: var(--special_white);
 }
 
@@ -148,4 +158,8 @@ th {
 
 .link-black {
   color: var(--special_black_original);
+}
+
+.button {
+  color: var(--special_white);
 }

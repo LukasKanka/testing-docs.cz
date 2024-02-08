@@ -163,3 +163,12 @@ th {
 .button {
   color: var(--special_white);
 }
+
+/* Zvětšení písma odkazu */
+.button {
+  transition: font-size 0.3s ease;
+}
+
+.button:hover {
+  font-size: 25px;
+}

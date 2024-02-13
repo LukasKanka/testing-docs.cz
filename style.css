@@ -115,6 +115,12 @@ footer {
 h1 {
   font-family: cursive;
   margin: 0px 0px 0px 30px;
+  transition: color 0.5s ease;
+}
+
+/* Změna barvy */
+h1:hover {
+  color: red;
 }
 
 h2 {
@@ -162,6 +168,11 @@ th {
 
 .button {
   color: var(--special_white);
+  transition: color 0.5s ease;
+}
+
+.button:hover {
+  color: red;
 }
 
 /* Zvětšení písma odkazu */

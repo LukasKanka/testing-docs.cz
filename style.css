@@ -166,6 +166,7 @@ th {
   color: var(--special_black_original);
 }
 
+/* Změna barvy písma */
 .button {
   color: var(--special_white);
   transition: color 0.5s ease;
@@ -176,10 +177,10 @@ th {
 }
 
 /* Zvětšení písma odkazu */
-.button {
+/* .button {
   transition: font-size 0.3s ease;
 }
 
 .button:hover {
   font-size: 25px;
-}
+} */
